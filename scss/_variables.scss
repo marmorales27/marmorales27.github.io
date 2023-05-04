@@ -1,0 +1,33 @@
+$color-primario: rgb(240, 179, 215);
+$color-secundario: rgb(73, 184, 110);
+$color-texto: rgb(221, 112, 152);
+$color-blanco: #fff7f6;
+$color-negro: rgb(13, 12, 12);
+
+$espaciado-estandar: 10px;
+$espacio-doble: 20px;
+
+$fuente-normal: 1em;
+$fuente-pequena: 0.8em;
+$fuente-grande: 1.4em;
+
+$tipografia-general: 'Roboto', sans-serif;
+$tipografia-alternativa: 'times new roman', times, serif;
+
+$contenedor-flex: flex;
+$contenedor-grid: grid;
+$justify-between: space-between;
+$justify-texto: center;
+
+$margin: 20px;
+$font-size: 2rem;
+
+
+$redesfooter:(
+    flex:flex,
+    space-evenly: space-evenly,
+    center: center,
+)
+ 
+
+

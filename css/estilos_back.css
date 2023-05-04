@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');*/
+
+/*selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color:rgb(226, 241, 244) ;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+    font-family:'roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(5, 6, 5);
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+    font-family:'roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(5, 6, 5);
+}
+
+.ContenedorGrid{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15% 55% auto;
+    grid-template-rows: 0.5fr auto 1fr ;
+    grid-template-areas: "nav header "
+                         "nav main "
+                         "nav footer"; 
+}  
+
+
+/*esta clase tiene el color principal de la pagina*/
+.header{
+    /*background-color:rgba(250, 184, 195, 0.752) ;
+    grid-area: header;
+    margin: 1px;
+    padding: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;*/
+    background-color: rgb(235, 161, 205);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedorTitulo{
+      padding-right: 50px;
+}
+
+.logo{ 
+    width: 150px;
+}
+
+.nav{
+    background-color: rgb(207, 175, 237);
+    grid-area: nav;
+    list-style: none;
+    margin: 10px;
+    text-decoration: none;
+    font-size: none;
+    width:100%;
+    display:flex;
+    justify-content:space-around
+}
+
+.main{
+    background-color: rgb(191, 244, 255);
+    grid-area: main;
+} 
+
+.linknav{
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    font-size: 50px;
+    display:inline-block;
+    padding: 20px;
+
+}
+
+.listaNavegacion{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: space-around ;
+    align-items: center;
+}
+
+/*estirado section principal del index*/
+.sectionPrincipal{
+    background-color: rgb(252, 229, 221);
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.contenidoMain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenidoMain img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.primerParrafo{
+    color: rgb(14, 13, 13);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contenidoFooter{
+    grid-area: footer;
+    width: 100%;
+    background-color: rgb(212, 144, 187);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedoresRedes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contenedoresRedes a{
+    color: #161616;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(226, 220, 220);
+    justify-content: space-around ;
+    align-items: center;
+}
+
+
+.galeria div img{
+    width: 400px;
+    height: 400px; 
+    object-fit: cover;
+ 
+ }
+
+ .galeria div{
+    background-color: rgb(247, 195, 239);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(241, 126, 183);
+    /*position: fixed;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+}
+
+ @media screen and (max-width: 768px){
+    .contenedorGrid{
+    grid-template-columns: 1fr;
+
+    grid-template-rows: repeat(5,auto) ;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "aside"
+                         "footer";       
+    row-gap: 10px;               
+    }
+}
+
+.contenedorRedes a{
+       font-size: 1.5rem ;
+}
+
+

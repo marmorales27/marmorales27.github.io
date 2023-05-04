@@ -1,0 +1,86 @@
+.main{
+    background-color: rgb(191, 244, 255);
+    grid-area: main;
+} 
+
+.animacion{
+    background-image: linear-gradient(to top, #f4a6d2, #f5a9da, #f5ade2, #f4b1ea, #f3b5f2, #d8c2ff, #c0cdff, #b1d5ff, #97e2ff, #8aedf6, #96f5e0, #b7f9c5);
+}
+
+
+/*estirado section principal del index*/
+.sectionPrincipal{
+    background-color: rgb(252, 229, 221);
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.contenidoMain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenidoMain img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.primerParrafo{
+    color: rgb(14, 13, 13);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+    font-family:'roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(5, 6, 5);
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+    font-family:'roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(5, 6, 5);
+}
+
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(226, 220, 220);
+    justify-content: space-around ;
+    align-items: center;
+}
+
+
+.galeria div img{
+    width: 400px;
+    height: 400px; 
+    object-fit: cover;
+ 
+ }
+
+ .galeria div{
+    background-color: rgb(247, 195, 239);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}

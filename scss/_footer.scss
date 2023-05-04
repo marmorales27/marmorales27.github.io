@@ -1,0 +1,33 @@
+.contenidoFooter{
+    grid-area: footer;
+    width: 100%;
+    background-color: rgb(212, 144, 187);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedoresRedes{
+    display: map-get($redesfooter, flex);
+    justify-content: map-get($redesfooter, space-evenly);
+    align-items:map-get($redesfooter, center);
+}
+.contenedoresRedes a{
+    color: #161616;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(241, 126, 183);
+    /*position: fixed;
+    bottom: 0;*/
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorRedes a{
+    font-size: 1.5rem ;
+}

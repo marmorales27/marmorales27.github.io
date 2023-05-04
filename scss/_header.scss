@@ -1,0 +1,42 @@
+/*esta clase tiene el color principal de la pagina*/
+.header{
+    background-color: rgb(235, 161, 205);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    background-color: rgb(207, 175, 237);
+    grid-area: nav;
+    list-style: none;
+    margin: 10px;
+    text-decoration: none;
+    font-size: none;
+    width:100%;
+    display:flex;
+    justify-content:space-around
+}
+
+
+.linknav{
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+    font-size: 50px;
+    display:inline-block;
+    padding: 20px;
+
+}
+
+.listaNavegacion{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: space-around ;
+    align-items: center;
+}

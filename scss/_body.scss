@@ -1,0 +1,36 @@
+.body{
+    background-color:rgb(226, 241, 244) ;
+}
+
+.ContenedorGrid{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15% 55% auto;
+    grid-template-rows: 0.5fr auto 1fr ;
+    grid-template-areas: "nav header "
+                         "nav main "
+                         "nav footer"; 
+}  
+
+.logo{ 
+    width: 150px;
+}
+
+.contenedorTitulo{
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .contenedorGrid{
+    grid-template-columns: 1fr;
+
+    grid-template-rows: repeat(5,auto) ;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "aside"
+                         "footer";       
+    row-gap: 10px;               
+    }
+}
